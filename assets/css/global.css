@@ -1,0 +1,162 @@
+.link {
+  color: var(--red);
+}
+
+.link:hover {
+  color: white;
+}
+
+body {
+  background-color: var(--light-blue);
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+#main {
+  width: 100vw;
+}
+
+.white {
+  color: white;
+}
+.white:hover {
+  color: white;
+}
+
+.rounded {
+  border-radius: 70%;
+}
+
+figcaption {
+  font-size: 0.5em;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#subscribe {
+  width: 400px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+#coding,
+#ai,
+#gadgets {
+  /* flex-direction: row; */
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+/* make flex item take up 1/4 of parent space, but set min width of 300px to be responsive on sm screens */
+.list--item {
+  width: 25%;
+  min-width: 300px;
+  text-align: center;
+}
+
+.social-links,
+.copyright {
+  text-align: center;
+}
+
+#main {
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "header"
+    "welcome"
+    "ai"
+    "coding"
+    "gadgets"
+    "footer";
+}
+
+#post-main {
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "header"
+    "post-title"
+    "post-sub-title"
+    "post-quote"
+    "post-content"
+    "about"
+    "footer";
+}
+header {
+  grid-area: header;
+}
+footer {
+  grid-area: footer;
+}
+#post-title {
+  grid-area: post-title;
+}
+#post-sub-title {
+  grid-area: post-sub-title;
+}
+#post-quote {
+  grid-area: post-quote;
+}
+#post-content {
+  grid-area: post-content;
+}
+#about {
+  justify-self: end;
+  grid-area: about;
+}
+#ai {
+  grid-area: ai;
+}
+#gadgets {
+  grid-area: gadgets;
+}
+#coding {
+  grid-area: coding;
+}
+#welcome {
+  grid-area: welcome;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#footer {
+  background-color: var(--blue);
+  color: white;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  #main {
+    grid-template-areas:
+      "header header"
+      "welcome welcome"
+      "ai coding"
+      "gadgets gadgets"
+      "footer footer";
+  }
+
+  #post-main {
+    grid-template-areas:
+      "header header"
+      "post-title post-title"
+      "post-sub-title post-sub-title"
+      "post-quote about"
+      "post-content post-content"
+      "footer footer";
+  }
+}

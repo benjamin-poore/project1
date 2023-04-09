@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>TechNow</title>
+  </head>
+  <body>
+    <div id="main">
+      <header id="header">
+        <!-- using flexbox style on the nav tag -->
+        <nav id="nav">
+          <a class="link title" href="index.html">TechNow</a>
+          <a class="link" href="#ai">AI</a>
+          <a class="link" href="#coding">Coding</a>
+          <a class="link" href="#gadgets">Gadgets</a>
+        </nav>
+      </header>
+
+      <!-- using grid to display two cards and making the grid responsive at breakpoint 768px -->
+      <section class="card" id="welcome">
+        <!-- <div class="card" id="welcome"> -->
+        <h1><em>Welcome!</em></h1>
+        <p>
+          Welcome to our tech blog! Here, we cover a wide range of topics
+          related to coding, new technology gadgets, and all other things tech.
+          Whether you're a seasoned programmer or just starting out, our blog
+          has something for everyone. We bring you the latest news and insights
+          on the most cutting-edge technology trends, as well as tips and tricks
+          to help you improve your coding skills. Our team of expert writers
+          share their knowledge and experience in a variety of tech-related
+          fields, from software development and hardware design to artificial
+          intelligence and machine learning. So, whether you're interested in
+          the latest tech gadgets or want to stay up-to-date on the latest
+          coding practices, you'll find it all here on our blog.
+        </p>
+        <!-- </div> -->
+      </section>
+
+      <section id="coding">
+        <div class="card w-100">
+          <h2>Coding</h2>
+        </div>
+        <div class="flex justify-center">
+          <div class="card list--item">
+            <h3>Intro to HTML</h3>
+            <img src="assets/images/html.jpg" alt="html code" height="100" />
+            <p>Learn HTML 5</p>
+            <div class="author">
+              <img
+                class="rounded"
+                src="assets/images/author.png"
+                alt="author photo"
+                height="50"
+              />
+              <figcaption>Benjamin Poore</figcaption>
+            </div>
+            <a class="btn white" href="post.html">Read More</a>
+          </div>
+
+          <div class="card list--item">
+            <h3>Intro to CSS</h3>
+            <img src="assets/images/css.jpg" alt="css book" height="100" />
+            <p>Want to learn the latest CSS styling tricks?</p>
+            <div class="author">
+              <img
+                class="rounded"
+                src="assets/images/author.png"
+                alt="author photo"
+                height="50"
+              />
+              <figcaption>Benjamin Poore</figcaption>
+            </div>
+            <a class="btn white" href="post.html">Read More</a>
+          </div>
+
+          <div class="card list--item">
+            <h3>Intro to JS</h3>
+            <img src="assets/images/js.jpg" alt="image of code" height="100" />
+            <p>Want to learn the latest JS tricks?</p>
+            <div class="author">
+              <img
+                class="rounded"
+                src="assets/images/author.png"
+                alt="author photo"
+                height="50"
+              />
+              <figcaption>Benjamin Poore</figcaption>
+            </div>
+            <a class="btn white" href="post.html">Read More</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="gadgets">
+        <div class="card w-100">
+          <h2>Gadgets</h2>
+        </div>
+        <div class="flex justify-center">
+          <div class="card list--item">
+            <h3>Google Pixel 7</h3>
+            <img src="assets/images/pixel.jpg" alt="pixel image" height="100" />
+            <p>What is new on the latest Google phone?</p>
+            <div class="author">
+              <img
+                class="rounded"
+                src="assets/images/author.png"
+                alt="author photo"
+                height="50"
+              />
+              <figcaption>Benjamin Poore</figcaption>
+            </div>
+            <a class="btn white" href="post.html">Read More</a>
+          </div>
+
+          <div class="card list--item">
+            <h3>Samsung Galaxy S23</h3>
+
+            <img
+              src="assets/images/samsung.jpg"
+              alt="galaxt s23 image"
+              height="100"
+            />
+            <p>What is new on the latest Samsung phone?</p>
+            <div class="author">
+              <img
+                class="rounded"
+                src="assets/images/author.png"
+                alt="author photo"
+                height="50"
+              />
+              <figcaption>Benjamin Poore</figcaption>
+            </div>
+            <a class="btn white" href="post.html">Read More</a>
+          </div>
+
+          <div class="card list--item">
+            <h3>Apple iPhone 14</h3>
+            <img
+              src="assets/images/iphone.jpg"
+              alt="iphone image"
+              height="100"
+            />
+            <p>Is it worth buying the latest Iphone?</p>
+            <div class="author">
+              <img
+                class="rounded"
+                src="assets/images/author.png"
+                alt="author photo"
+                height="50"
+              />
+              <figcaption>Benjamin Poore</figcaption>
+            </div>
+            <a class="btn white" href="post.html">Read More</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="ai">
+        <div class="card w-100">
+          <h2>Artificial Intelligence</h2>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="card list--item">
+            <h3>ChatGPT</h3>
+            <img
+              src="assets/images/openai.jpg"
+              alt="open ai logo"
+              height="100"
+            />
+            <p>How will ChatGPT shape the tech world in the future</p>
+            <div class="author">
+              <img
+                class="rounded"
+                src="assets/images/author.png"
+                alt="author photo"
+                height="50"
+              />
+              <figcaption>Benjamin Poore</figcaption>
+            </div>
+            <a class="btn white" href="post.html">Read More</a>
+          </div>
+
+          <div class="card list--item">
+            <h3>Midjourney</h3>
+            <img
+              src="assets/images/midjourney.jpg"
+              alt="open ai logo"
+              height="100"
+            />
+            <p>
+              Will Midjourney make deepfakes hard to distinguish from real life?
+            </p>
+            <div class="author">
+              <img
+                class="rounded"
+                src="assets/images/author.png"
+                alt="author photo"
+                height="50"
+              />
+              <figcaption>Benjamin Poore</figcaption>
+            </div>
+            <a class="btn white" href="post.html">Read More</a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="grid" id="footer">
+          <div class="footer-col">
+            <h3>About Us</h3>
+            <p>
+              We are a tech blog that covers the latest trends and developments
+              in the world of technology. Our team of experts provides
+              informative and engaging content for tech enthusiasts.
+            </p>
+          </div>
+          <div class="connect">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="subscribe">
+            <!-- <div class="card" id="subscribe"> -->
+            <h3>Join Our Mailing List</h3>
+            <p>
+              <!-- use em, u and b tags in a paragraph per rubric design requirement -->
+              <b>Join our mailing list</b> to stay up-to-date on the latest tech
+              trends and receive exclusive content, <u>special offers</u>, and
+              valuable insights directly to your inbox. Don't miss out on the
+              opportunity to be part of our community of tech enthusiasts and
+              stay informed about the latest developments in the world of
+              technology.
+            </p>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+              <input type="submit" />
+            </form>
+            <!-- </div> -->
+          </div>
+        </div>
+        <caption class="copyright">
+          <p>&copy; 2023 TechBlog. All rights reserved.</p>
+        </caption>
+      </footer>
+    </div>
+  </body>
+</html>

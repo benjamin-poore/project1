@@ -1,0 +1,47 @@
+#nav {
+  display: flex;
+  background-color: var(--blue);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  font-weight: 700;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 2px solid var(--red);
+}
+
+.link:hover {
+  background-color: var(--red);
+}
+
+.title {
+  border: none;
+}
+
+.btn {
+  background-color: var(--light-blue); /* Set the background color */
+  border: none; /* Remove the border */
+  color: white; /* Set the text color */
+  padding: 12px 24px; /* Set the padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Display as inline-block */
+  font-size: 16px; /* Set the font size */
+  margin: 4px 2px; /* Add margin */
+  cursor: pointer; /* Add cursor pointer */
+  border-radius: 4px; /* Add rounded corners */
+  font-weight: 700;
+}
+
+.btn:hover {
+  filter: brightness(0.8); /* Darken the element by 20% */
+}
+
+#blog-title {
+  align-self: center; /* vertical center text */
+}
